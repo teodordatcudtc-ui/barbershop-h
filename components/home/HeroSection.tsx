@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export function HeroSection() {
   return (
     <section
-      className="relative min-h-[90vh] flex items-center overflow-hidden pt-20"
+      className="relative min-h-[52vh] sm:min-h-[65vh] lg:min-h-[90vh] flex items-center overflow-hidden pt-20 pb-12 sm:pb-16 lg:pb-0"
       aria-label="Secțiune principală"
     >
       {/* Background: pune în /public/hero-bg.jpg (sau hero-bg.webp) imaginea ta – se afișează automat */}
@@ -30,7 +30,7 @@ export function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl">
           <motion.p
-            className="font-display text-accent text-lg sm:text-xl tracking-wide mb-4"
+            className="font-display text-accent text-base sm:text-xl tracking-wide mb-2 sm:mb-4"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -38,7 +38,7 @@ export function HeroSection() {
             Frizerie de cartier
           </motion.p>
           <motion.h1
-            className="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-accent-secondary leading-[0.95] tracking-tight"
+            className="font-heading font-bold text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-accent-secondary leading-[0.95] tracking-tight"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -46,7 +46,7 @@ export function HeroSection() {
             BARBERSHOP H
           </motion.h1>
           <motion.p
-            className="mt-6 text-text-muted text-lg sm:text-xl max-w-xl leading-relaxed"
+            className="mt-3 sm:mt-6 text-text-muted text-sm sm:text-lg lg:text-xl max-w-xl leading-relaxed line-clamp-3 sm:line-clamp-none"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
@@ -54,7 +54,7 @@ export function HeroSection() {
             În inima Bucureștiului, oferim tunsori clasice, îngrijire de barbă și o atmosferă dedicată bărbaților care apreciază detaliul și tradiția.
           </motion.p>
           <motion.div
-            className="mt-10"
+            className="mt-5 sm:mt-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
