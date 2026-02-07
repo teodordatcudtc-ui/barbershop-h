@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0f0f0f;
+    --bg-elevated: #1a1a1a;
+    --accent: #c9b896;
+    --accent-secondary: #4f7267;
+    --text: #e5e5e5;
+    --text-muted: #a3a3a3;
+    --highlight: rgba(201, 184, 150, 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Decorative line accents */
+.accent-line::before,
+.accent-line::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Prevent layout shift from scrollbar */
+html {
+  overflow-y: scroll;
+}
