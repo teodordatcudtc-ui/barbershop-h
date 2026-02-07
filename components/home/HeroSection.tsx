@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export function HeroSection() {
   return (
     <section
-      className="relative min-h-[52vh] sm:min-h-[65vh] lg:min-h-[90vh] flex items-center overflow-hidden pt-20 pb-12 sm:pb-16 lg:pb-0"
+      className="relative min-h-[42vh] sm:min-h-[55vh] lg:min-h-[90vh] flex items-center overflow-hidden pt-20 pb-10 sm:pb-14 lg:pb-0"
       aria-label="Secțiune principală"
     >
       {/* Background: pune în /public/hero-bg.jpg (sau hero-bg.webp) imaginea ta – se afișează automat */}
