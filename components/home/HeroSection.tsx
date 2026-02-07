@@ -63,7 +63,7 @@ export function HeroSection() {
               href="/contact"
               className="inline-block px-8 py-4 border-2 border-accent text-accent font-heading text-sm uppercase tracking-widest hover:bg-accent hover:text-bg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg rounded-sm"
             >
-              Programează o programare
+              Programează-te
             </Link>
           </motion.div>
         </div>
